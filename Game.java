@@ -63,14 +63,16 @@ Player_Input = scan.nextLine();
 if (Player_Input.equals("y")) {
 	System.out.println("\t Welcome to the tutorial.");
 	System.out.println("\t-------------------------- \n");
+	System.out.println("Moonstone are the ingame currency.");
+	System.out.println("Actions can be executed by entering a number.");
+  System.out.println("\n");
 	System.out.println("Enter '1' for a Spaceboot Kick.");
 	System.out.println("Damage: between -2 and -6 health");
 	System.out.println("Cost: 2 Moonstones \n");
 	System.out.println("Enter '2' for a Laser Gun attack.");
 	System.out.println("Damage: between -6 and -12 health");
 	System.out.println("Cost: 5 Moonstones \n");
-	System.out.println("Enter '3' for generating 1 health for 1 moonstone.");
-	System.out.println("\n");
+	System.out.println("Enter '3' for generating 1 health for 1 moonstone. \n");
 	System.out.println("Start Game? y/n");
 	Player_Input = scan.nextLine();
 	if (Player_Input.equals("n")) {
@@ -91,6 +93,8 @@ System.out.println("\n");
 System.out.println("   Enemy Stats");
 System.out.println("-----------------");
 System.out.println("Enemy health: " + Enemy_Health +"\n");
+System.out.println("\n");
+System.out.println("1: Kick, 2: Gun, 3: Health");
 }
 
 static void Enemy_Generator() throws InterruptedException {
